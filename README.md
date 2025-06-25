@@ -17,7 +17,7 @@ LeetMetric is a web application that tracks and displays your LeetCode problem-s
 - LeetCode Unofficial API
 
 ## 📺 Live Demo
-👉 [LeetMetric GitHub Page](https://your-username.github.io/LeetMetric/)
+👉 [LeetMetric GitHub Page]( https://hemlata559.github.io/leetcodeMatrix/)
 
 ## 🛠️ Setup
 1. Clone this repository
