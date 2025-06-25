@@ -29,9 +29,9 @@ LeetMetric is a web application that tracks and displays your LeetCode problem-s
 - User avatar and profile stats
 - Dark/light theme toggle
 
-## 📸 Preview Image 
+## 📸 Preview Images
+![LeetMetric Screenshot](preview.png)
 
-![LeetMetric Screenshot](assets/preview.png)
 
 
 "This project uses data from the public LeetCode Stats API. All rights to the API belong to their respective owners."
