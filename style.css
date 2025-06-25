@@ -1,0 +1,147 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 900;
+
+
+}
+
+body {
+  background: rgb(89,90,106);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  background: rgb(69,64,64);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  color: bisque;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #bdd0e3;
+}
+
+.user-container p {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.user-input-container {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input#user-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #5b5193;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  width: 80%;
+}
+
+input#user-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button#search-btn {
+  background-color: #767f85;
+  color: rgb(3, 0, 5);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#search-btn:hover {
+  background-color: #2980b9;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #5b5193;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
+}
+
+
+.progress{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  justify-content:space-between;
+  margin-top: auto;
+
+}
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 70%;
+  background: radial-gradient(circle at center, #3a3f47, #2c2f34);
+  color: #f0e6d2;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #5c6770;
+  transition: transform 0.2s ease-in-out;
+  gap: 2px;
+  flex-direction: column;
+  gap: 3px;
+  background: conic-gradient(
+  #5b5193 calc(var(--progress-degree, 0%)),
+  #3a3f47 0%
+  
+);
+
+
+}
+
+.circle:hover {
+  transform: scale(1.05);
+  background: radial-gradient(circle at center, #495057, #343a40);
+}
